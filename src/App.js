@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 // import Contact from "./components/Contact";
 // import Footer from "./components/Footer";
 // import Portfolio from "./components/Portfolio";
-// import About from "./components/About";
+import About from "./components/About";
 import HashLoader from "react-spinners/HashLoader";
 import Home from "./components/Home";
 
@@ -37,7 +37,7 @@ function App() {
         <>
           <Navbar />
           <Home />
-          {/* <About /> */}
+          <About />
           {/* <Portfolio /> */}
           {/* <Experience /> */}
           {/* <Contact /> */}
