@@ -9,7 +9,7 @@ function About() {
       className="bg-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 w-full md:min-h-screen flex items-center"
     >
       <div className="max-w-screen-lg mx-auto p-6 flex flex-col justify-center w-full h-full dark:text-white ">
-        <Fade direction="top-left" duration={1500}>
+        <Fade triggerOnce direction="top-left" duration={1500}>
           <div className="pb-8 ">
             <p className="text-4xl font-bold  flex flex-col w-full">
               About
@@ -20,7 +20,7 @@ function About() {
           </div>
         </Fade>
 
-        <Fade direction="top-left" duration={2500}>
+        <Fade triggerOnce direction="top-left" duration={2500}>
           <p className="text-gray-500 py-4 max-w-2xl mx-3 text-xl leading-8">
             Experienced Web Developer adept in all stages of advanced web
             development and building. Knowledgeable in user interface, testing,

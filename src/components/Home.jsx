@@ -22,7 +22,7 @@ function Home() {
         />
         <div className="w-full h-full -z-30 fixed top-0 left-0 bg-black opacity-60 "></div>
       </div>
-      <Fade duration={2000} className="w-full h-full">
+      <Fade triggerOnce duration={2000} className="w-full h-full">
         <div className="max-w-screen-lg mx-auto px-6 py-12 sm:py-6  flex flex-col items-center  justify-center  w-full h-full text-white gap-6 sm:gap-10">
           <p className="text-2xl sm:text-5xl font-bold text-cyan-500  ">
             Hi, I'm Ahmed Alabadla

@@ -3,7 +3,7 @@ import htmlCss from "../assets/portfolio/htmlCss.png";
 import tanweel from "../assets/portfolio/tanweel.png";
 import aljode from "../assets/portfolio/aljode.png";
 import weather from "../assets/portfolio/weather.png";
-import todo from "../assets/portfolio/todo.png";
+// import todo from "../assets/portfolio/todo.png";
 import cartApp from "../assets/portfolio/cartApp.png";
 import social_media from "../assets/portfolio/social_media.png";
 
@@ -102,7 +102,7 @@ function Projects() {
       className="bg-light dark:bg-gradient-to-b dark:from-gray-800 dark:to-black w-full min-h-screen overflow-hidden"
     >
       <div className="max-w-screen-lg mx-auto p-6 flex flex-col justify-center w-full h-full dark:text-white ">
-        <Fade direction="top-left" duration={1500}>
+        <Fade triggerOnce direction="top-left" duration={1500}>
           <div className="pb-8">
             <p className="text-4xl font-bold flex flex-col w-full">
               Portfolio
@@ -120,7 +120,7 @@ function Projects() {
         </Fade>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 sm:gap-9  px-12 sm:px-0 pb-10 sm:pb-0 ">
           {/* cards */}
-          <Fade direction="left" duration={1500}>
+          <Fade triggerOnce direction="left" duration={1500}>
             {projects.map((item) => (
               <>
                 <Tilt options={{ max: 25, scale: 1 }} key={item.id}>
