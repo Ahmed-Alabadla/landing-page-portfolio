@@ -2,13 +2,11 @@ import "./App.css";
 import React, { useEffect, useState } from "react";
 import Navbar from "./components/Navbar";
 import { useSelector } from "react-redux";
-// import Experience from "./components/Experience";
-// import Contact from "./components/Contact";
-// import Footer from "./components/Footer";
-// import Portfolio from "./components/Portfolio";
+
 import About from "./components/About";
 import HashLoader from "react-spinners/HashLoader";
 import Home from "./components/Home";
+import Projects from "./components/Projects";
 
 function App() {
   const { mode } = useSelector((state) => state.mode);
@@ -38,10 +36,7 @@ function App() {
           <Navbar />
           <Home />
           <About />
-          {/* <Portfolio /> */}
-          {/* <Experience /> */}
-          {/* <Contact /> */}
-          {/* <Footer /> */}
+          <Projects />
         </>
       )}
     </div>

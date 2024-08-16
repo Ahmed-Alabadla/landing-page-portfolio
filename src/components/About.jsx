@@ -6,7 +6,7 @@ function About() {
   return (
     <div
       id="about"
-      className="bg-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 w-full md:h-screen"
+      className="bg-light dark:bg-gradient-to-b dark:from-black dark:to-gray-800 w-full md:min-h-screen flex items-center"
     >
       <div className="max-w-screen-lg mx-auto p-6 flex flex-col justify-center w-full h-full dark:text-white ">
         <Fade direction="top-left" duration={1500}>

@@ -19,7 +19,7 @@ const Navbar = () => {
     },
     {
       id: 3,
-      link: "Portfolio",
+      link: "Projects",
       href: "#portfolio",
     },
     {
