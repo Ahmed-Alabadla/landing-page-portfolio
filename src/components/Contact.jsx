@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 import { BarLoader } from "react-spinners";
@@ -8,6 +8,7 @@ import { Fade } from "react-awesome-reveal";
 
 function Contact() {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   // handle form events
   const {
@@ -19,9 +20,11 @@ function Contact() {
 
   // handleSubmit
   const onSubmit = (data) => {
+    setLoading(true);
+
     emailjs
       .sendForm(
-        "service_eayx81b",
+        "service_9nniy4m",
         "template_wnzcqpg",
         form.current,
         "Rj2QulWvExeOM5G9k"
@@ -39,6 +42,7 @@ function Contact() {
             theme: "colored",
           });
           reset();
+          setLoading(false);
         },
         (error) => {
           // console.log(error.text);
@@ -134,7 +138,8 @@ function Contact() {
 
               <button
                 type="submit"
-                className="text-white font-medium bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center justify-center rounded-md  duration-300"
+                disabled={loading}
+                className="disabled:cursor-not-allowed text-white font-medium bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center justify-center rounded-md  duration-300"
               >
                 Send message
               </button>

@@ -9,6 +9,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const { mode } = useSelector((state) => state.mode);
@@ -41,6 +42,7 @@ function App() {
           <Projects />
           <Experience />
           <Contact />
+          <Footer />
         </>
       )}
     </div>
