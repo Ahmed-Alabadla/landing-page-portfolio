@@ -7,8 +7,8 @@ import { useSelector } from "react-redux";
 // import Footer from "./components/Footer";
 // import Portfolio from "./components/Portfolio";
 // import About from "./components/About";
-// import Home from "./components/Home";
 import HashLoader from "react-spinners/HashLoader";
+import Home from "./components/Home";
 
 function App() {
   const { mode } = useSelector((state) => state.mode);
@@ -17,9 +17,14 @@ function App() {
 
   useEffect(() => {
     setLoading(true);
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setLoading(false);
     }, 5000);
+
+    return () => {
+      // cleanUp
+      clearTimeout(timeout);
+    };
   }, []);
 
   return (
@@ -31,12 +36,12 @@ function App() {
       ) : (
         <>
           <Navbar />
-          {/* <Home />
-          <About />
-          <Portfolio />
-          <Experience />
-          <Contact />
-          <Footer /> */}
+          <Home />
+          {/* <About /> */}
+          {/* <Portfolio /> */}
+          {/* <Experience /> */}
+          {/* <Contact /> */}
+          {/* <Footer /> */}
         </>
       )}
     </div>
