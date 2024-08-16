@@ -8,6 +8,7 @@ import HashLoader from "react-spinners/HashLoader";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 function App() {
   const { mode } = useSelector((state) => state.mode);
@@ -39,6 +40,7 @@ function App() {
           <About />
           <Projects />
           <Experience />
+          <Contact />
         </>
       )}
     </div>
